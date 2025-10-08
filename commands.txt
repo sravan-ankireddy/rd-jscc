@@ -1,0 +1,5 @@
+### JSAC rebuttal
+
+python train.py --gpu 0 --n_denoising_steps 20 --data_name jscc_cost2100 --dim_mults 1 2 3 4 --embed_dim 64 --bandwidth 32 --mrl_weights 1 --lr 3e-4 --final_lr 1e-5 --log_checkpoint_step 25000 --training 
+
+python train.py --gpu 1 --n_denoising_steps 20 --data_name jscc_cost2100 --dim_mults 1 2 3 4 --embed_dim 64 --bandwidth 32 24 16 8 --mrl_weights 1 0.75 0.5 0.25 --lr 3e-4 --final_lr 1e-5 --log_checkpoint_step 25000 --training 
